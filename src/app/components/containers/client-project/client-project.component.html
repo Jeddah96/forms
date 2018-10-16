@@ -1,0 +1,11 @@
+<form [formGroup]="form">
+  <app-checkbox-input [parent]="form" [toppings]="toppings" [selected]="control.value" (select)="selectTopping($event)">
+  </app-checkbox-input>
+  <app-text-input [parent]="form">
+  </app-text-input>
+  <!-- <pizza-selected [parent]="form" [selected]="control.value" (remove)="removeTopping($event)">
+  </pizza-selected> -->
+  <app-submit-button [parent]="form" (add)="onSubmit()">
+    Add pizza
+  </app-submit-button>
+</form>
