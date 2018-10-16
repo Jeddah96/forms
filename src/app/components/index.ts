@@ -3,6 +3,7 @@ import { TextInputComponent } from './inputs/text-input/text-input.component';
 import { SubmitButtonComponent } from './inputs/submit-button/submit-button.component';
 import { CheckboxInputComponent } from './inputs/checkbox-input/checkbox-input.component';
 import { RadioInputComponent } from './inputs/radio-input/radio-input.component';
+// import { StoryCreatorComponent } from './story-creator/story-creator.component';
 
 export const components: any[] = [
   ClientProjectComponent,
@@ -10,6 +11,7 @@ export const components: any[] = [
   SubmitButtonComponent,
   CheckboxInputComponent,
   RadioInputComponent,
+  // StoryCreatorComponent
 ];
 
 export * from './containers/client-project/client-project.component';
@@ -17,3 +19,4 @@ export * from './inputs/text-input/text-input.component';
 export * from './inputs/submit-button/submit-button.component';
 export * from './inputs/checkbox-input/checkbox-input.component';
 export * from './inputs/radio-input/radio-input.component';
+// export * from './story-creator/story-creator.component';

@@ -1,3 +1,19 @@
 <div class="app">
   <app-client-project></app-client-project>
+  <npn-slider [min]="1000" [max]="5000" (onChange)="onSliderChange($event)" [step]="500" [showStepIndicator]="true"></npn-slider>
+  <br>
+  <app-slider [min]="0" [max]="4" [minSelected]="1" [maxSelected]="2" [step]="1.00" [showStepIndicator]="true">
+  </app-slider>
+  <br>
+  <br>
+  <app-slider [min]="0" [max]="4" [maxSelected]="2" [step]="1.00" [showStepIndicator]="true">
+  </app-slider>
+  <br>
+  <br>
+  <app-slider [min]="-10" [max]="40" [minSelected]="1" [maxSelected]="2" [step]="1.00" [showStepIndicator]="true">
+  </app-slider>
+  <br>
+  <br>
+  <app-slider [min]="0.05" [max]="1.05" [minSelected]="0.1" [maxSelected]="1.0" [step]="0.01" [showStepIndicator]="true">
+  </app-slider>
 </div>

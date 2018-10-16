@@ -1,0 +1,8 @@
+<div class="pizza-creator">
+  <div class="pizza-creator__title">
+  </div>
+  <div class="pizza-creator__panes">
+    <app-client-project [toppings]="toppings$ | async" (add)="addPizza($event)">
+    </app-client-project>
+  </div>
+</div>

@@ -1,13 +1,30 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-import { Topping } from './../../../models/field-config.model';
+import { Topping, Pizza } from './../../../models/field-config.model';
 
+
+export interface State {
+  pizzas: Pizza[];
+  toppings: Topping[];
+}
+const state: State = {
+  pizzas: [
+    { name: 'New Yorker', toppings: ['Bacon', 'Pepperoni', 'Ham', 'Mushrooms'] },
+    { name: 'Hot & Spicy', toppings: ['Jalapenos', 'Herbs', 'Pepperoni', 'Chicken'] },
+    { name: 'Hawaiian', toppings: ['Ham', 'Pineapple', 'Sweetcorn'] }
+  ],
+  toppings: [
+    'Bacon', 'Pepperoni', 'Mushrooms', 'Herbs',
+    'Chicken', 'Pineapple', 'Ham', 'Jalapenos'
+  ]
+};
 @Component({
   selector: 'app-checkbox-input',
   templateUrl: './checkbox-input.component.html',
   styleUrls: ['./checkbox-input.component.scss']
 })
+
 export class CheckboxInputComponent {
 
 
@@ -45,5 +62,9 @@ export class CheckboxInputComponent {
     this.touched = true;
     this.select.emit(topping);
   }
+
+
+
+
 
 }
